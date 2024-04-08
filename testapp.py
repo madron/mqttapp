@@ -3,7 +3,7 @@ import mqttapp
 
 class App(mqttapp.App):
     async def initialize(self):
-        await self.client.subscribe('temperature/outside')
+        await self.mqtt_client.subscribe('temperature/outside')
 
 
 if __name__ == '__main__':
